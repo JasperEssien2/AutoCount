@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AutoCount</string>
+    <string-array name="Categories">
+        <item>Traffic flow volume</item>
+        <item>New Cars</item>
+        <item>Buses/coaches</item>
+        <item>Motorcycles</item>
+        <item>Faulty brake systems</item>
+        <item>Body dents</item>
+        <item>Worn-out tyres</item>
+        <item>Faulty Mirrors</item>
+        <item>Exhaust smoke</item>
+        <item>Noisy Vehicles</item>
+        <item>Cracked windscreen</item>
+        <item>Without wipers</item>
+        <item>Collision incidence</item>
+        <item>Visible road signs</item>
+        <item>Pot holes</item>
+        <item>Availability of drainage</item>
+        <item>SeatBelt use</item>
+        <item>Crash helmet use</item>
+        <item>Speed limit violators</item>
+        <item>Underage drivers</item>
+        <item>Use of phones</item>
+        <item>Eating/drinking while driving</item>
+        <item>Aggressive behaviours</item>
+    </string-array>
+</resources>
