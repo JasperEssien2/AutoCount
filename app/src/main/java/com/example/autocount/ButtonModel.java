@@ -1,19 +1,26 @@
 package com.example.autocount;
 
 import androidx.annotation.DrawableRes;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity(tableName = "auto_count")
 public class ButtonModel {
+    @PrimaryKey(autoGenerate = false)
     private int id;
+    @ColumnInfo(name = "name")
     private String name;
     @DrawableRes
     private int imageResource;
-    private int currentCount;
+    @ColumnInfo(name = "totalCount")
+    private int totalCount;
 
-    public ButtonModel(String name, int imageResource, int currentCount) {
+    public ButtonModel(String name, int imageResource, int totalCount) {
         super();
         this.name = name;
         this.imageResource = imageResource;
-        this.currentCount = currentCount;
+        this.totalCount = totalCount;
     }
 
     public String getName() {
@@ -32,15 +39,19 @@ public class ButtonModel {
         this.imageResource = imageResource;
     }
 
-    public int getCurrentCount() {
-        return currentCount;
+    public int getTotalCount() {
+        return totalCount;
     }
 
-    public void setCurrentCount(int currentCount) {
-        this.currentCount = currentCount;
+    public void setTotalCount(int totalCount) {
+        this.totalCount = totalCount;
     }
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
