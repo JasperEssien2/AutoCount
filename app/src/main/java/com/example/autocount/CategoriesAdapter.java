@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
@@ -40,7 +41,13 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
     @Override
     public void onBindViewHolder(@NonNull final CategoriesViewHolder holder, final int position) {
         final ButtonModel buttonModel = buttonModels.get(holder.getAdapterPosition());
-
+        holder.imageView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                Toast.makeText(view.getContext(), buttonModel.getName(), Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
         holder.add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

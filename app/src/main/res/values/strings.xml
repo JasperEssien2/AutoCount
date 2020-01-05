@@ -14,9 +14,9 @@
         <item>Cracked windscreen</item>
         <item>Without wipers</item>
         <item>Collision incidence</item>
-        <item>Visible road signs</item>
-        <item>Pot holes</item>
-        <item>Availability of drainage</item>
+        <!--<item>Visible road signs</item>-->
+        <!--<item>Pot holes</item>-->
+        <!--<item>Availability of drainage</item>-->
         <item>SeatBelt use</item>
         <item>Crash helmet use</item>
         <item>Speed limit violators</item>
